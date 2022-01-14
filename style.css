@@ -12,10 +12,10 @@
   font-size: 1rem;
 
   --mainBackground: #fff;
-  --titleColor: #1A202C;
-  --linkColor: #2B6CB0;
-  --1ctaButtonBackground: #04C35C;
-  --2ctaButtonBackground: #1A202C;
+  --titleColor: #1a202c;
+  --linkColor: #2b6cb0;
+  --1ctaButtonBackground: #04c35c;
+  --2ctaButtonBackground: #1a202c;
 }
 
 html {
@@ -26,6 +26,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 5rem;
 
   height: 100vh;
 
@@ -33,7 +34,8 @@ html {
 }
 
 .container .illustration img {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   height: 330px;
 }
 
@@ -43,7 +45,7 @@ html {
   font-family: 'Merriweather', serif;
   font-size: 1rem;
 
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .mainContentContainer fieldset legend {
@@ -65,16 +67,16 @@ form label {
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
 
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 form input {
-  border: 1px solid #E8E8E8;
+  border: 1px solid #e8e8e8;
   padding: 16px 20px;
 }
 
 form input#emailInput {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 form input#passwordInput {
@@ -82,27 +84,28 @@ form input#passwordInput {
 }
 
 form input::placeholder {
-  color: #1A202C;
-  font-size: .875rem;
+  color: #1a202c;
+  font-size: 0.875rem;
 }
 
 fieldset {
-  width: 347px;
+  max-width: 347px;
+  width: 100%;
 }
 
 fieldset div.div {
   display: flex;
   justify-content: space-between;
 
-  font-size: .875rem;
+  font-size: 0.875rem;
 
-  padding: 1.625rem .5rem;
+  padding: 1.625rem 0.5rem;
 }
 
 fieldset div.div .rememberInputContainer {
   display: flex;
   align-items: center;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
 fieldset div.div .forgotPassword a {
@@ -128,7 +131,7 @@ fieldset .buttons button {
 
   cursor: pointer;
 
-  transition: background .2s;
+  transition: background 0.2s;
 }
 
 fieldset .buttons button:hover {
@@ -140,7 +143,7 @@ fieldset .buttons a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: .8rem;
+  gap: 0.8rem;
 
   font-size: 1rem;
   font-weight: 700;
@@ -152,7 +155,6 @@ fieldset .buttons a {
   margin-bottom: 1rem;
   padding: 16px 60px;
   border-radius: 5px;
-
 }
 
 fieldset .buttons a:hover {
@@ -164,7 +166,18 @@ fieldset .buttons a > img {
   height: 20px;
 }
 
-
 fieldset .createAccount a {
   color: var(--linkColor);
+}
+
+@media (max-width: 996px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container .illustration {
+    display: none;
+  }
 }
