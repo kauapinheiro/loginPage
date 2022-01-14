@@ -11,5 +11,58 @@
       rel="stylesheet"
     />
   </head>
-  <body></body>
+  <body>
+    <main class="container">
+      <div class="illustration">
+        <img src="assets/illustrations/aboutUsPage.svg" />
+      </div>
+      <div class="mainContentContainer">
+        <div class="text">
+          <p>Bem vindo de volta</p>
+        </div>
+        <fieldset>
+          <legend>Faça login na sua conta</legend>
+          <form action="" method="POST" id="form">
+            <label for="emailInput">E-mail</label>
+            <input
+              type="email"
+              name="emailInput"
+              id="emailInput"
+              placeholder="email@addres.com"
+              autocomplete="email"
+              required
+            />
+            <label for="passwordInput">Senha</label>
+            <input
+              type="password"
+              name="passwordInput"
+              id="passwordInput"
+              placeholder="********"
+              autocomplete="current-password"
+              required
+            />
+          </form>
+          <div>
+            <div class="rememberInputContainer">
+              <input type="checkbox" name="rememberInput" id="rememberInput" />
+              <label for="rememberInput">Lembrar meus dados</label>
+            </div>
+            <div class="forgotPassword">
+              <a href="">Esqueceu sua senha?</a>
+            </div>
+          </div>
+          <div class="buttons">
+            <button form="form" type="submit">Entrar</button>
+            <a href="">
+              <img src="assets/icons/google.svg" alt="" />
+              Ou faça login com o Google
+            </a>
+          </div>
+          <div class="createAccount">
+            <p>Não tem uma conta? <a href="">Crie a sua agora mesmo</a></p>
+          </div>
+        </fieldset>
+      </div>
+    </main>
+  </body>
 </html>
