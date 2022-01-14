@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 100%;
+}
+
+:root {
+  font-size: 1rem;
+
+  --mainBackground: #fff;
+  --titleColor: #1A202C;
+  --linkColor: #2B6CB0;
+  --1ctaButtonBackground: #04C35C;
+  --2ctaButtonBackground: #1A202C;
+}
